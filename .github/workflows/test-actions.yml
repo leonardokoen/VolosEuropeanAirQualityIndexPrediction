@@ -27,8 +27,9 @@ jobs:
           pip install -r requirements.txt
           
       - name: execute test script # run main.py
-        # env:
-        #   SOME_SECRET: ${{ secrets.SOME_SECRET }}
+        env:
+          HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
+          BACKFILL: False
         run: python Pipelines/update_24_hours_test.py
       
       - name: commit and push changes
