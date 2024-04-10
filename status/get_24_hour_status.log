@@ -4,3 +4,7 @@
 2024-04-10 11:48:40,785 - __main__ - INFO - [Success] Get last 24 hour data from Green Your Air Backend Call.
 2024-04-10 11:48:40,785 - __main__ - INFO - [Initiate] Connect to hopsworks feature store.
 2024-04-10 11:48:42,052 - __main__ - INFO - [Success] Connect to hopsworks feature store.
+2024-04-10 12:11:07,307 - __main__ - INFO - [Initiate] Get last 24 hour data from Green Your Air Backend Call.
+2024-04-10 12:11:10,371 - __main__ - INFO - [Success] Get last 24 hour data from Green Your Air Backend Call.
+2024-04-10 12:11:10,371 - __main__ - INFO - [Initiate] Connect to hopsworks feature store.
+2024-04-10 12:11:11,330 - __main__ - INFO - [Success] Connect to hopsworks feature store.
