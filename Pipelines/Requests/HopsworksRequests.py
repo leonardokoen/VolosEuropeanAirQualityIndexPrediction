@@ -15,3 +15,6 @@ class HopsworksRequests():
         volos_breath_history_fg =self.fs.get_feature_group("volos_breath_history", version=1)
         volos_breath_history_df = volos_breath_history_fg.read().sort_values(by='date').reset_index(drop=True)
         return volos_breath_history_df
+    
+    def get_fs(self):
+        return self.fs

@@ -43,8 +43,16 @@ class FeatureExtractionFromResponses():
         return live_data
     
     def data_24_hours_feature_extraction(self, response : requests.models.Response) -> pd.DataFrame:
+        greece_tz = pytz.timezone('Europe/Athens')
+        current_datetime = datetime.now(greece_tz)
+
         data_24 = response.json()['data']
         data_24 = pd.DataFrame(data_24)
         data_24 = data_24.rename(columns={0:'value'})
         data_24['value'] = data_24['value'].astype(float)
-        return data_24
+        data_average = pd.DataFrame(columns=['index', 'date', 'value'])
+        data_average.loc[len(data_average.index)] = [0, current_datetime.date(), data_24['value'].mean()]
+        data_average['index'] = data_average['index'].astype('Int64')
+         
+        data_average['eaqi_index'] = data_average['value'].apply(calculate_eaqi)
+        return data_average
