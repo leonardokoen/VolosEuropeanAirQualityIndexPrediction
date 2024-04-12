@@ -6,7 +6,6 @@ import pickle as pkl
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
-logger.info(20*"-" + "Pipeline update_24_hours_pipeline Initiated" + 20*"-")
 logger_file_handler = logging.handlers.RotatingFileHandler(
     "status/get_24_hour_status.log",
     maxBytes=1024 * 1024,
