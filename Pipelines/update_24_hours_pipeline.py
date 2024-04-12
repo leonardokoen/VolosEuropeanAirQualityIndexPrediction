@@ -54,9 +54,9 @@ if __name__ == "__main__":
 
     #Get Hopsworks Feature Group
     try: 
-        logger.info(f"[Initiate] Get hopsworks feature group - name: {"volos_breath_daily_tracker"} , version = {1}")
+        logger.info(f"[Initiate] Get hopsworks feature group - name: volos_breath_daily_tracker , version = {1}")
         feature_group = feature_store.get_feature_group(name="volos_breath_daily_tracker", version = 1)
-        logger.info(f"[Success] Get hopsworks feature group - name: {"volos_breath_daily_tracker"} , version = {1}" )
+        logger.info(f"[Success] Get hopsworks feature group - name: volos_breath_daily_tracker , version = {1}" )
     except Exception as e:
         logger.error(f"[Failed] Could not get feature group: {e}")
 
