@@ -53,6 +53,5 @@ class FeatureExtractionFromResponses():
         data_average = pd.DataFrame(columns=['index', 'date', 'value'])
         data_average.loc[len(data_average.index)] = [0, current_datetime.date(), data_24['value'].mean()]
         data_average['index'] = data_average['index'].astype('Int64')
-         
         data_average['eaqi_index'] = data_average['value'].apply(calculate_eaqi)
         return data_average
