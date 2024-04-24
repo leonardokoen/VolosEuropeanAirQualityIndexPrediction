@@ -4,6 +4,7 @@ from Requests.AirQualityRequests import AirQualityRequests
 from Requests.HopsworksRequests import HopsworksRequests
 import pickle as pkl
 
+print("Pokemon")
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 logger_file_handler = logging.handlers.RotatingFileHandler(
