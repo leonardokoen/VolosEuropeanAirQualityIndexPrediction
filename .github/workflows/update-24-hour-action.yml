@@ -29,7 +29,15 @@ jobs:
         env:
           HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
           BACKFILL: False
-        run: python Pipelines/update_24_hours_pipeline.py
+        run:
+          python Pipelines/update_24_hours_pipeline.py
+      
+      - name: Execute pipeline daily history script # run main.py
+        env:
+          HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
+          BACKFILL: False
+        run:
+          python Pipelines/update_daily_history_pipeline.py
       
       - name: Commit and push changes
         uses: devops-infra/action-commit-push@master
