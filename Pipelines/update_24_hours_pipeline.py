@@ -59,7 +59,7 @@ if __name__ == "__main__":
         logger.info(f"[Success] Get hopsworks feature group - name: volos_breath_daily_tracker , version = {1}" )
     except Exception as e:
         logger.error(f"[Failed] Could not get feature group: {e}")
-
+        raise
     #Insert data to Feature Group
     try:
         logger.info("[Initiate] Inserting data to feature group.")
@@ -67,7 +67,7 @@ if __name__ == "__main__":
         logger.info("[Success] Inserting data to feature group.")
     except Exception as e:
         logger.error(f"[Failed] Could not insert data to feature group: {e}")
-
+        raise
     #Update the index in the pickle file.
     try:
         logger.info(f"[Initiate] Change the index in pickle file to value: {index + 1}.")

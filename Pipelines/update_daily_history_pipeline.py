@@ -59,15 +59,18 @@ if __name__ == "__main__":
         logger.info(f"[Success] Get hopsworks feature group - name: volos_breath_history_daily , version = {1}" )
     except Exception as e:
         logger.error(f"[Failed] Could not get feature group: {e}")
+        raise
 
     #Insert data to Feature Group
     try:
         logger.info("[Initiate] Inserting data to feature group.")
         data['date'] = pd.to_datetime(data['date'], format='%Y-%m-%d')
+        data['eaqi_index'] = data['eaqi_index'].astype("float64")
         feature_group.insert(data, overwrite=False, storage="online")
         logger.info("[Success] Inserting data to feature group.")
     except Exception as e:
         logger.error(f"[Failed] Could not insert data to feature group: {e}")
+        raise
 
     #Update the index in the pickle file.
     try:
