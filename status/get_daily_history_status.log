@@ -1056,3 +1056,15 @@ Note that feature (or column) names are case insensitive and spaces are automati
 2024-10-21 21:09:20,106 - INFO - [Success] Inserting data to feature group.
 2024-10-21 21:09:20,106 - INFO - [Initiate] Change the index in pickle file to value: 2040.
 2024-10-21 21:09:20,106 - INFO - [Success] Index changed successfully to value: 2040.
+2024-10-22 21:09:01,966 - INFO - [Initiate] Get the last index from pickle file.
+2024-10-22 21:09:01,966 - INFO - [Success] Index retrieved successfully with value 2040.
+2024-10-22 21:09:01,966 - INFO - [Initiate] Get last 24 hour data from Green Your Air Backend Call.
+2024-10-22 21:09:02,582 - INFO - [Success] Get last 24 hour data from Green Your Air Backend Call.
+2024-10-22 21:09:02,582 - INFO - [Initiate] Connect to hopsworks feature store.
+2024-10-22 21:09:03,302 - INFO - [Success] Connect to hopsworks feature store.
+2024-10-22 21:09:03,302 - INFO - [Initiate] Get hopsworks feature group - name: volos_breath_history_daily , version = 1
+2024-10-22 21:09:03,489 - INFO - [Success] Get hopsworks feature group - name: volos_breath_history_daily , version = 1
+2024-10-22 21:09:03,489 - INFO - [Initiate] Inserting data to feature group.
+2024-10-22 21:09:08,792 - INFO - [Success] Inserting data to feature group.
+2024-10-22 21:09:08,793 - INFO - [Initiate] Change the index in pickle file to value: 2041.
+2024-10-22 21:09:08,793 - INFO - [Success] Index changed successfully to value: 2041.
