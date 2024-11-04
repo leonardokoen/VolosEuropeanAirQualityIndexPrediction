@@ -2180,3 +2180,15 @@
 2024-11-03 21:08:42,887 - INFO - [Success] Inserting data to feature group.
 2024-11-03 21:08:42,887 - INFO - [Initiate] Change the index in pickle file to value: 179.
 2024-11-03 21:08:42,887 - INFO - [Success] Index changed successfully to value: 179.
+2024-11-04 21:08:32,232 - INFO - [Initiate] Get the last index from pickle file.
+2024-11-04 21:08:32,232 - INFO - [Success] Index retrieved successfully with value 179.
+2024-11-04 21:08:32,232 - INFO - [Initiate] Get last 24 hour data from Green Your Air Backend Call.
+2024-11-04 21:08:33,140 - INFO - [Success] Get last 24 hour data from Green Your Air Backend Call.
+2024-11-04 21:08:33,140 - INFO - [Initiate] Connect to hopsworks feature store.
+2024-11-04 21:08:34,270 - INFO - [Success] Connect to hopsworks feature store.
+2024-11-04 21:08:34,270 - INFO - [Initiate] Get hopsworks feature group - name: volos_breath_daily_tracker , version = 1
+2024-11-04 21:08:34,515 - INFO - [Success] Get hopsworks feature group - name: volos_breath_daily_tracker , version = 1
+2024-11-04 21:08:34,515 - INFO - [Initiate] Inserting data to feature group.
+2024-11-04 21:08:41,313 - INFO - [Success] Inserting data to feature group.
+2024-11-04 21:08:41,313 - INFO - [Initiate] Change the index in pickle file to value: 180.
+2024-11-04 21:08:41,313 - INFO - [Success] Index changed successfully to value: 180.
